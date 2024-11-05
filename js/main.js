@@ -3,24 +3,21 @@
   /*========================burger menu=============================*/
   /*================================================================*/
 
-  // const burgerIcon = document.querySelector('.burger-icon');
-  // console.log(burgerIcon);
-  // burgerIcon.addEventListener('click', burgerInit)
+  const burgerIcon = document.querySelector(".burger-menu");
+  burgerIcon.addEventListener("click", burgerInit);
 
-  // function burgerInit(e) {
-  //     if (document.documentElement.clientWidth > 850) return
+  function burgerInit(e) {
+    if (document.documentElement.clientWidth > 850) return;
 
-  //     if (!document.body.classList.contains('body--opened-menu')) {
-  //         document.body.classList.add('body--opened-menu')
-  //         document.querySelector('.burger--closed').style.display = 'block'
-  //         document.querySelector('.burger--opened').style.display = 'none'
-
-  //     } else {
-  //         document.body.classList.remove('body--opened-menu')
-  //         document.querySelector('.burger--closed').style.display = 'none'
-  //         document.querySelector('.burger--opened').style.display = 'block'
-  //     }
-  //   }
+    const header = document.querySelector(".header__inner");
+    if (!header.classList.contains("header__inner--mobile")) {
+      burgerIcon.classList.add("burger-menu--open");
+      header.classList.add("header__inner--mobile");
+    } else {
+      burgerIcon.classList.remove("burger-menu--open");
+      header.classList.remove("header__inner--mobile");
+    }
+  }
 
   /*================================================================*/
   /*========================tabs produts=============================*/
