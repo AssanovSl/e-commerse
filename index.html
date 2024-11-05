@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YourBank</title>
+    <!-- FAVICON
+    <link rel="icon" href="./img/logo/logo_favicon.png" /> -->
+
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/swiper.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body class="body">
+    <div class="wrapper">
+      <div class="header">
+        <div class="header__top">
+          <div class="container">
+            <div class="header__inner">
+              <a href="/" class="header__logo logo">
+                <img src="./img/logo/logo-black.svg" alt="logotype cyber" />
+              </a>
+              <div class="header_seartch">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.9331 17L13.1554 13.2156M15.2489 8.15789C15.2489 10.0563 14.4948 11.8769 13.1524 13.2193C11.81 14.5617 9.98939 15.3158 8.091 15.3158C6.19261 15.3158 4.37197 14.5617 3.0296 13.2193C1.68724 11.8769 0.933105 10.0563 0.933105 8.15789C0.933105 6.2595 1.68724 4.43886 3.0296 3.0965C4.37197 1.75413 6.19261 1 8.091 1C9.98939 1 11.81 1.75413 13.1524 3.0965C14.4948 4.43886 15.2489 6.2595 15.2489 8.15789V8.15789Z"
+                    stroke="#989898"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <p>Search</p>
+              </div>
+              <nav class="nav">
+                <ul class="nav__list">
+                  <li class="nav__item nav__item--accent">
+                    <a href="#" class="nav__link"> Home </a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link"> About </a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link"> Contact Us </a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__link"> Blog </a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header__pa">
+                <ul class="header__pa-list">
+                  <li class="header__pa-item">
+                    <button>
+                      <svg
+                        width="22"
+                        height="20"
+                        viewBox="0 0 22 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6 1C3.239 1 1 3.216 1 5.95C1 8.157 1.875 13.395 10.488 18.69C10.6423 18.7839 10.8194 18.8335 11 18.8335C11.1806 18.8335 11.3577 18.7839 11.512 18.69C20.125 13.395 21 8.157 21 5.95C21 3.216 18.761 1 16 1C13.239 1 11 4 11 4C11 4 8.761 1 6 1Z"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="header__pa-item">
+                    <button>
+                      <svg
+                        width="27"
+                        height="24"
+                        viewBox="0 0 27 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 1H5L8 18H24M8 12.6667H23.59C23.7056 12.6667 23.8177 12.6267 23.9072 12.5535C23.9966 12.4802 24.0579 12.3782 24.0806 12.2648L25.8806 3.26479C25.8951 3.19222 25.8934 3.11733 25.8755 3.04552C25.8575 2.97372 25.8239 2.90679 25.7769 2.84956C25.73 2.79234 25.6709 2.74625 25.604 2.71462C25.5371 2.68299 25.464 2.66662 25.39 2.66667H6M10 22C10 22.5523 9.55228 23 9 23C8.44772 23 8 22.5523 8 22C8 21.4477 8.44772 21 9 21C9.55228 21 10 21.4477 10 22ZM24 22C24 22.5523 23.5523 23 23 23C22.4477 23 22 22.5523 22 22C22 21.4477 22.4477 21 23 21C23.5523 21 24 21.4477 24 22Z"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="header__pa-item">
+                    <button>
+                      <svg
+                        width="19"
+                        height="24"
+                        viewBox="0 0 19 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M18 23V20.3333C18 18.9188 17.5224 17.5623 16.6722 16.5621C15.8221 15.5619 14.669 15 13.4667 15H5.53333C4.33102 15 3.17795 15.5619 2.32778 16.5621C1.47762 17.5623 1 18.9188 1 20.3333V23M15 5.5C15 7.98528 12.9853 10 10.5 10C8.01472 10 6 7.98528 6 5.5C6 3.01472 8.01472 1 10.5 1C12.9853 1 15 3.01472 15 5.5Z"
+                          stroke="black"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <a class="burger-icon">
+                <svg
+                  class="burger--opened"
+                  width="22"
+                  height="14"
+                  viewBox="0 0 22 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.5 0.875C0.5 0.391751 0.891751 0 1.375 0H20.625C21.1082 0 21.5 0.391751 21.5 0.875C21.5 1.35825 21.1082 1.75 20.625 1.75H1.375C0.891751 1.75 0.5 1.35825 0.5 0.875ZM0.5 7C0.5 6.51675 0.891751 6.125 1.375 6.125H20.625C21.1082 6.125 21.5 6.51675 21.5 7C21.5 7.48325 21.1082 7.875 20.625 7.875H1.375C0.891751 7.875 0.5 7.48325 0.5 7ZM10.125 13.125C10.125 12.6418 10.5168 12.25 11 12.25H20.625C21.1082 12.25 21.5 12.6418 21.5 13.125C21.5 13.6082 21.1082 14 20.625 14H11C10.5168 14 10.125 13.6082 10.125 13.125Z"
+                    fill="#333333"
+                  />
+                </svg>
+
+                <svg
+                  class="burger--closed"
+                  style="display: none"
+                  width="18.000977"
+                  height="18.000000"
+                  viewBox="0 0 18.001 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <rect
+                    id="Прямоугольник 1"
+                    x="2.181641"
+                    y="0.144775"
+                    rx="1.081748"
+                    width="22.716705"
+                    height="2.163496"
+                    transform="rotate(45.8609 2.181641 0.144775)"
+                    fill="#333333"
+                    fill-opacity="1.000000"
+                  />
+                  <rect
+                    id="Прямоугольник 1"
+                    y="16.302734"
+                    rx="1.000000"
+                    width="22.716705"
+                    height="2.163496"
+                    transform="rotate(-45.8609 0.000000 16.302734)"
+                    fill="#333333"
+                    fill-opacity="1.000000"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <div class="hero__grid">
+          <div class="hero__tile">
+            <div class="hero__tile-col hero__tile-col--white">
+              <h4 class="hero__tile-subtitle">Pro.Beyond.</h4>
+              <h2 class="hero__tile-title">IPhone 14 <span>Pro</span></h2>
+              <p class="hero__tile-descr">
+                Created to change everything for the better. For everyone
+              </p>
+              <a href="#" class="hero__tile-btn btn">Shop Now</a>
+            </div>
+            <div class="hero__tile-decore">
+              <img src="./img/decor/hero-tile-iphone.png" alt="iPhone 14 PRO" />
+            </div>
+          </div>
+          <div class="hero__tile">
+            <div class="hero__tile-decore">
+              <img src="./img/decor/hero-tile-ps5.png" alt="PlayStation 5" />
+            </div>
+            <div class="hero__tile-col">
+              <h2 class="hero__tile-title">Playstation 5</h2>
+              <p class="hero__tile-descr">
+                Incredibly powerful CPUs, GPUs, and an SSD with integrated I/O
+                will redefine your PlayStation experience.
+              </p>
+            </div>
+          </div>
+          <div class="hero__tile">
+            <div class="hero__tile-col">
+              <h2 class="hero__tile-title">Macbook <span>Air</span></h2>
+              <p class="hero__tile-descr">
+                The new 15‑inch MacBook Air makes room for more of what you love
+                with a spacious Liquid Retina display.
+              </p>
+              <a href="#" class="btn hero__tile-btn hero__tile-btn--black"
+                >Shop Now</a
+              >
+            </div>
+            <div class="hero__tile-decore">
+              <img
+                src="./img/decor/hero-tile-macbook.png"
+                alt="PlayStation 5"
+              />
+            </div>
+          </div>
+          <div class="hero__tile">
+            <div class="hero__tile-decore">
+              <img src="./img/decor/hero-tile-air-pods.png" alt="AirPods Max" />
+            </div>
+            <div class="hero__tile-col">
+              <h2 class="hero__tile-title">Apple AirPods <span>Max</span></h2>
+              <p class="hero__tile-descr">
+                Computational audio. Listen, it's powerful
+              </p>
+            </div>
+          </div>
+          <div class="hero__tile">
+            <div class="hero__tile-decore">
+              <img
+                src="./img/decor/hero-tile-vision-pro.png"
+                alt="Vision Pro"
+              />
+            </div>
+            <div class="hero__tile-col">
+              <h2 class="hero__tile-title">Apple Vision <span>Pro</span></h2>
+              <p class="hero__tile-descr">
+                An immersive way to experience entertainment
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- HERO SECTION END -->
+
+      <!-- CATEGORIES SECTION -->
+      <section class="categories">
+        <div class="container">
+          <div class="categories__top">
+            <h4 class="categories__title section-title">Browse By Category</h4>
+            <div class="categories__nav">
+              <div class="categories-prev">
+                <svg
+                  width="14"
+                  height="24"
+                  viewBox="0 0 14 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.3333 23.6667C12.0678 23.6679 11.8131 23.5622 11.6266 23.3733L0.959934 12.7067C0.569996 12.3162 0.569996 11.6838 0.959934 11.2933L11.6266 0.626666C12.0206 0.259521 12.6346 0.270354 13.0154 0.65117C13.3962 1.03199 13.4071 1.64599 13.0399 2.04L3.07993 12L13.0399 21.96C13.4299 22.3504 13.4299 22.9829 13.0399 23.3733C12.8534 23.5622 12.5987 23.6679 12.3333 23.6667Z"
+                    fill="black"
+                  />
+                </svg>
+              </div>
+              <div class="categories-next">
+                <svg
+                  width="14"
+                  height="24"
+                  viewBox="0 0 14 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.66673 0.333332C1.93215 0.332079 2.18689 0.43782 2.3734 0.626667L13.0401 11.2933C13.43 11.6838 13.43 12.3162 13.0401 12.7067L2.3734 23.3733C1.97939 23.7405 1.36539 23.7296 0.984571 23.3488C0.603755 22.968 0.592921 22.354 0.960067 21.96L10.9201 12L0.960067 2.04C0.570128 1.64958 0.570128 1.01709 0.960067 0.626667C1.14658 0.43782 1.40131 0.332079 1.66673 0.333332Z"
+                    fill="black"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="swiper categories__slider">
+            <!-- Additional required wrapper -->
+            <div class="categories__wrapper swiper-wrapper">
+              <!-- Slides -->
+              <div class="categories__slide swiper-slide">
+                <a href="#">
+                  <img
+                    src="./img/icons/categories/phones.png"
+                    alt="Phones category"
+                  />
+                  <span>Phones</span>
+                </a>
+              </div>
+              <div class="categories__slide swiper-slide">
+                <a href="#">
+                  <img
+                    src="./img/icons/categories/watches.png"
+                    alt="Watches category"
+                  />
+                  <span>Smart Watches</span>
+                </a>
+              </div>
+              <div class="categories__slide swiper-slide">
+                <a href="#">
+                  <img
+                    src="./img/icons/categories/cameras.png"
+                    alt="Cameras category"
+                  />
+                  <span>Cameras</span>
+                </a>
+              </div>
+              <div class="categories__slide swiper-slide">
+                <a href="#">
+                  <img
+                    src="./img/icons/categories/headphones.png"
+                    alt="Headphones category"
+                  />
+                  <span>Headphones</span>
+                </a>
+              </div>
+              <div class="categories__slide swiper-slide">
+                <a href="#">
+                  <img
+                    src="./img/icons/categories/computers.png"
+                    alt="Computers category"
+                  />
+                  <span>Computers</span>
+                </a>
+              </div>
+              <div class="categories__slide swiper-slide">
+                <a href="#">
+                  <img
+                    src="./img/icons/categories/gaming.png"
+                    alt="Gaming category"
+                  />
+                  <span>Gaming</span>
+                </a>
+              </div>
+              <div class="categories__slide swiper-slide">
+                <a href="#">
+                  <img
+                    src="./img/icons/categories/template-1.png"
+                    alt="+1 category"
+                  />
+                  <span>Lorem</span>
+                </a>
+              </div>
+              <div class="categories__slide swiper-slide">
+                <a href="#">
+                  <img
+                    src="./img/icons/categories/template-2.png"
+                    alt="+1 category"
+                  />
+                  <span>ipsum</span>
+                </a>
+              </div>
+              <div class="categories__slide swiper-slide">
+                <a href="#">
+                  <img
+                    src="./img/icons/categories/template-3.png"
+                    alt="+1 category"
+                  />
+                  <span>dolor</span>
+                </a>
+              </div>
+              <div class="categories__slide swiper-slide">
+                <a href="#">
+                  <img
+                    src="./img/icons/categories/template-4.png"
+                    alt="+1 category"
+                  />
+                  <span>sit</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CATEGORIES SECTION END-->
+
+      <!-- PRODUCT SECTION -->
+      <section class="products">
+        <div class="container"></div>
+      </section>
+      <!-- PRODUCT SECTION END -->
+
+      <!-- BANNER /banner cards -->
+      <section class="banners__inner">
+        <div class="banner__item">
+          <img src="./img/banners/popular.png" alt="Popular Products" />
+          <div class="banner__item-wrapper">
+            <h4 class="banner__item-title">Popular Products</h4>
+            <p class="banner__item-descr">
+              iPad combines a magnificent 10.2-inch Retina display, incredible
+              performance, multitasking and ease of use.
+            </p>
+            <a href="#" class="btn banner__item-btn"> Shop Now </a>
+          </div>
+        </div>
+        <div class="banner__item">
+          <img src="./img/banners/ipad-pro.png" alt="Ipad Pro" />
+          <div class="banner__item-wrapper">
+            <h4 class="banner__item-title">Ipad Pro</h4>
+            <p class="banner__item-descr">
+              iPad combines a magnificent 10.2-inch Retina display, incredible
+              performance, multitasking and ease of use.
+            </p>
+            <a href="#" class="btn banner__item-btn"> Shop Now </a>
+          </div>
+        </div>
+        <div class="banner__item">
+          <img src="./img/banners/samsung-galaxy.png" alt="Samsung Galaxy" />
+          <div class="banner__item-wrapper">
+          <h4 class="banner__item-title">Samsung Galaxy</h4>
+          <p class="banner__item-descr">
+            iPad combines a magnificent 10.2-inch Retina display, incredible
+            performance, multitasking and ease of use.
+          </p>
+          <a href="#" class="btn banner__item-btn"> Shop Now </a>
+        </div>
+        </div>
+        <div class="banner__item">
+          <img src="./img/banners/macbook.png" alt="Macbook Pro" />
+          <div class="banner__item-wrapper">
+            <h4 class="banner__item-title">Macbook Pro</h4>
+            <p class="banner__item-descr">
+              iPad combines a magnificent 10.2-inch Retina display, incredible
+              performance, multitasking and ease of use.
+            </p>
+            <a href="#" class="btn banner__item-btn"> Shop Now </a>
+          </div>
+        </div>
+      </section>
+      <!-- BANNER /banner cards END -->
+
+      <!-- DISCOUNT SECTION -->
+      <section class="discount">
+        <div class="container">
+          <h4 class="discount__title section-title">Discounts up to -50%</h4>
+          <div class="discount__row">
+            <div class="discount__card">
+              <img
+                src="./img/discount/iphone14pro-1.png"
+                alt="Apple iPhone 14 Pro 512GB Gold (MQ233)"
+              />
+              <p class="discount__card-title">
+                Apple iPhone 14 Pro 512GB Gold <br />(MQ233)
+              </p>
+              <h5 class="discount__card-price">$1437</h5>
+              <a href="#" class="discount__card-btn">Buy Now</a>
+            </div>
+            <div class="discount__card">
+              <img
+                src="./img/discount/airpods-max-silver.png"
+                alt="AirPods Max Silver"
+              />
+              <p class="discount__card-title">AirPods Max Silver</p>
+              <h5 class="discount__card-price">$549</h5>
+              <a href="#" class="discount__card-btn">Buy Now</a>
+            </div>
+            <div class="discount__card">
+              <img
+                src="./img/discount/apple-watch-s9.png"
+                alt="Apple Watch Series 9 GPS 41mm Starlight Aluminium Case"
+              />
+              <p class="discount__card-title">
+                Apple Watch Series 9 GPS 41mm <br />Starlight Aluminium Case
+              </p>
+              <h5 class="discount__card-price">$549</h5>
+              <a href="#" class="discount__card-btn">Buy Now</a>
+            </div>
+            <div class="discount__card">
+              <img
+                src="./img/discount/iphone14pro-2.png"
+                alt="Apple iPhone 14 Pro 1TB Gold (MQ2V3)"
+              />
+              <p class="discount__card-title">
+                Apple iPhone 14 Pro 1TB Gold <br />(MQ2V3)
+              </p>
+              <h5 class="discount__card-price">$1499</h5>
+              <a href="#" class="discount__card-btn">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- DISCOUNT SECTION END -->
+
+      <!-- BANNER 2/ Banner sale -->
+      <section class="banner-sale">
+        <h3 class="banner-sale__title">Big Summer <span>Sale</span></h3>
+        <p class="banner-sale__descr">
+          Commodo fames vitae vitae leo mauris in. Eu consequat.
+        </p>
+        <a href="#" class="banner-sale__btn btn">Shop Now</a>
+
+        <div class="banner-sale__decore--left">
+          <img src="./img/decor/banner-sale-left.png" alt="" />
+        </div>
+        <div class="banner-sale__decore--right">
+          <img src="./img/decor/banner-sale-right.png" alt="" />
+        </div>
+      </section>
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__column">
+              <a href="/" class="footer__logo logo">
+                <img src="./img/logo/logo-white.svg" alt="logotype cyber" />
+              </a>
+              <p class="footer-info">
+                We are a residential interior design firm located in Portland.
+                Our boutique-studio offers more than
+              </p>
+            </div>
+            <div class="footer__column">
+              <h5 class="footer__column-title">Services</h5>
+              <ul>
+                <li><a class="footer__link" href="#">Bonus program </a></li>
+                <li><a class="footer__link" href="#">Gift cards</a></li>
+                <li><a class="footer__link" href="#">Credit and payment</a></li>
+                <li><a class="footer__link" href="#">Service contracts</a></li>
+                <li><a class="footer__link" href="#">Non-cash account</a></li>
+                <li><a class="footer__link" href="#">Payment</a></li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <h5 class="footer__column-title">Assistance to the buyer</h5>
+              <ul>
+                <li><a class="footer__link" href="#">Find an order</a></li>
+                <li><a class="footer__link" href="#">Terms of delivery</a></li>
+                <li>
+                  <a class="footer__link" href="#"
+                    >Exchange and return of goods</a
+                  >
+                </li>
+                <li><a class="footer__link" href="#">Guarantee</a></li>
+                <li>
+                  <a class="footer__link" href="#"
+                    >Frequently asked questions</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__link" href="#">Terms of use of the site</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <ul class="footer__socials">
+            <li>
+              <a class="footer__social--link" href="#">
+                <img src="./img/icons/socials/twitter.svg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a class="footer__social--link" href="#">
+                <img src="./img/icons/socials/facebook.svg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a class="footer__social--link" href="#">
+                <img src="./img/icons/socials/tic-tok.svg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a class="footer__social--link" href="#">
+                <img src="./img/icons/socials/instagram.svg" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./js/swiper.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
