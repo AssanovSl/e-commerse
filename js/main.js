@@ -67,8 +67,11 @@
   const swiper = new Swiper(".categories__slider", {
     // Optional parameters
     spaceBetween: 30,
-    initialSlide: 0,
-    slidesPerView: 6,
+    slidesPerView: 2,
+    grid: {
+      fill: "row",
+      rows: 2,
+    },
     centeredSlides: false,
 
     //Navigation arrows
@@ -77,10 +80,19 @@
       prevEl: ".categories-prev",
     },
 
-    // breakpoints: {
-    //     601: {
-    //         slidesPerView: 3,
-    //     }
-    // }
+    breakpoints: {
+      501: {
+        slidesPerView: 3,
+        grid: {
+          rows: 1,
+        },
+      },
+      851: {
+        slidesPerView: 6,
+        grid: {
+          rows: 1,
+        },
+      },
+    },
   });
 })();
